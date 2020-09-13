@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public class HealthCheckResultCache<T> implements Serializable {
+public class Cache<T> implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -13,7 +13,7 @@ public class HealthCheckResultCache<T> implements Serializable {
 	private long cacheSavedTime;
 	private final long ttl;
 
-	public HealthCheckResultCache(final long ttl) {
+	public Cache(final long ttl) {
 		this.ttl = ttl;
 	}
 

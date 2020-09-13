@@ -2,12 +2,10 @@ package com.posni.cacheupdater;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class CacheDemo{
 	
-	private static HealthCheckResultCache<List<String>> cache = new HealthCheckResultCache<List<String>>(1);
+	private static Cache<List<String>> cache = new Cache<List<String>>(1);
 	
 	public List<String> getList(String string){		
 		
